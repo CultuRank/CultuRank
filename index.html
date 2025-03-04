@@ -8,34 +8,59 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <img src="images/CULTURANK LOGO.png" alt="CultuRank Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#data">Data</a></li>
-                <li><a href="#map">Map</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/CULTURANK LOGO.png" alt="CultuRank Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h1>About CultuRank</h1>
-            <p>CultuRank is an index dedicated to the preservation of cultural heritage...</p>
-        </section>
-        <section id="data">
-            <h2>Cultural Data</h2>
-            <div id="chart"></div>
-        </section>
-        <section id="additional-content">
-            <!-- Additional content will be loaded here dynamically -->
-        </section>
-        <section id="map">
-            <h2>Cultural Heritage Map</h2>
-            <div id="map" style="height: 400px;"></div>
-        </section>
-        <section id="contact">
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>CultuRank</h1>
+            <p>An Index for Cultural Preservation</p>
+            <a href="#data" class="cta-button">Explore the Data</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2>About CultuRank</h2>
+            <p>CultuRank is a global index dedicated to tracking and preserving cultural heritage. Our mission is to provide actionable insights into the state of cultural preservation worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="data">
+        <div class="section-container">
+            <h2>Cultural Preservation Index</h2>
+            <div class="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <div class="section-container">
+            <h2>Global Cultural Heritage Map</h2>
+            <div id="map-container" style="height: 500px;"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
             <h2>Contact Us</h2>
             <form id="contact-form">
                 <label for="name">Name:</label>
@@ -46,11 +71,22 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact us at info@culturank.org</p>
+        <div class="footer-container">
+            <p>&copy; 2025 CultuRank. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
