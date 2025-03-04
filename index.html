@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CultuRank - Cultural Preservation Index</title>
+    <title>CultuRank - Index for Cultural Preservation</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -13,6 +14,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#data">Data</a></li>
+                <li><a href="#map">Map</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -20,16 +22,37 @@
     <main>
         <section id="about">
             <h1>About CultuRank</h1>
-            <p>Lorem ipsum</p>
+            <p>CultuRank is an index dedicated to the preservation of cultural heritage...</p>
         </section>
         <section id="data">
             <h2>Cultural Data</h2>
             <div id="chart"></div>
         </section>
+        <section id="additional-content">
+            <!-- Additional content will be loaded here dynamically -->
+        </section>
+        <section id="map">
+            <h2>Cultural Heritage Map</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
-    <footer id="contact">
-        <p>Dolor sit amet</p>
+    <footer>
+        <p>Contact us at info@culturank.org</p>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
