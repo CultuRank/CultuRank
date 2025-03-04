@@ -18,7 +18,7 @@ async function initializeChart() {
     const ctx = document.getElementById('chart').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',
-        data: {
+        data: { 
             labels: data.labels,
             datasets: [{
                 label: 'Cultural Preservation Index',
